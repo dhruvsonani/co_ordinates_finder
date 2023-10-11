@@ -13,7 +13,8 @@ if(!data || !data.features){
 }
 const coordinates = {
   lat : data.features[0].center[1],
-  lng : data.features[0].center[0]
+  lng : data.features[0].center[0],
+  place_name : data.features[0].place_name,
 }
 return coordinates;
 }
