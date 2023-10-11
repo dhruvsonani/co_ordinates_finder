@@ -1,8 +1,7 @@
 const getCoordsForAddress = require('../utils/location');
  
-const getLocation = async(req,res,next) => {
+const getLocation = async(req,res) => {
     const address = req.body.address;
-    console.log(address);
     let coordinates;
     try{
       coordinates = await getCoordsForAddress(address);
